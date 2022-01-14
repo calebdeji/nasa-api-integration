@@ -57,7 +57,7 @@ const HomeDateModal: React.FC<HomeDateModalProps> = (props) => {
 						selected={selectedDates}
 						allowRange
 						disableDatesAfter={Date_Constants.UNFORMATTED_END_DATE}
-						disableDatesBefore={Date_Constants.UNFORMATTED_START_DATE}
+						disableDatesBefore={Date_Constants.UNFORMATTED_API_START_DATE_LIMIT}
 					/>
 				</Homestyles.ModalPadding>
 			</Modal.Section>
