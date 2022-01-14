@@ -14,7 +14,7 @@ const useStorage = <T extends Array<any>>(props: Props) => {
 		if (response != null) {
 			setStorage(response);
 		}
-	}, []);
+	}, [props.storedItemKey]);
 
 	useComponentDidUpdate(() => {
 		Storage.save(props.storedItemKey, storage);
